@@ -1,38 +1,63 @@
+/* App container */
 .App {
+  font-family: Arial, sans-serif;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #000;
+  color: #fff;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+/* Table styles */
+.table-container {
+  width: 100%;
+  max-width: 1000px;
+  overflow-x: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+table, th, td {
+  border: 1px solid #fff;
+}
+
+th {
+  padding: 8px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+  background-color: red; /* Set column name heading background color to red */
+  font-weight: bold; /* Bold font for column name headings */
+}
+
+td {
+  padding: 8px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+  color: #fff; /* Set text color for table data to white */
+}
+
+/* Loading message styles */
+p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* Header styles */
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
